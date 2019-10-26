@@ -1,0 +1,58 @@
+# run path
+# Serpent run path
+sPath:  sss2.1.31-2-debug
+omp: 2
+mpi: 1
+# FEMAXI run path
+fPath: FAMXI 
+
+
+# serpent input file
+sInput: IFA507_shielded
+#_trans
+#
+fInput: TF32 TF52 TF52
+
+# coupling interface control data
+maxIter: 2
+# coupled method: 0 for coupled steady state, 1 for one-way coupling transient, 2 for fully coupled transient
+mCouple: 0
+# converge target
+epsi: 1e-2
+
+# coupled pin data
+cPin: tf3 tf5 tf
+ifctype: 5 5 5
+ifcPre: TH
+# parameter to identify whether pin is in segments
+segPin:  1 1 1
+segArray:
+tf3pin tf3pinGap tf3pinTC
+tf5pin tf5pinGap tf5pinTC
+tfpin tfpinGap tfpinTC
+end
+# pin structure
+# axial structure, in cm
+axial: 
+0.0 48.1 
+0.0 48.1 
+0.0 48.1
+end
+# angular structure
+angular:
+1 0.0 360.0 
+1 0.0 360.0 
+1 0.0 360.0 
+end
+# hollow structure, in cm
+hollow:
+0.0
+0.0
+0.0
+end
+# energy range
+energy:
+1e6 2e6
+1e6 2e6
+1e6 2e6
+end
