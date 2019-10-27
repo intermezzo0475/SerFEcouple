@@ -1,7 +1,8 @@
 # A coupling interface between Serpent and FEMAXI-7
 
 **Written in python 3**
-To use the coupling interface, one must hold valid [Serpent](https://www.oecd-nea.org/tools/abstract/detail/NEA-1840") and [FEMAXI](https://www.oecd-nea.org/tools/abstract/detail/NEA-1080) lincense.
+
+To use the coupling interface, one must hold valid **[Serpent](https://www.oecd-nea.org/tools/abstract/detail/NEA-1840")** and **[FEMAXI](https://www.oecd-nea.org/tools/abstract/detail/NEA-1080)** lincense.
 
 ## Introduction
 
